@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EXPO</title>
+    <style type="text/css">
+        :root{    
+            --rojo: red;
+            --verde: green;
+            --morado: purple;
+            --amarillo: yellow;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        }
+         img{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            font-family: 'Rubik', sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 6fr);
+            grid-template-rows: repeat(4, 250px);
+        }
+        .expo{
+            font-weight: 2em;
+            overflow: hidden;
+        }
+        .expo img{
+            object-fit: cover;
+            object-position: center center;
+            height: 100%;
+            width: 100%;
+        }
+        .ex1{
+            background-color: var(--rojo);
+            color: black;
+        }
+        .ex4{
+            background-color: var(--morado);
+            color: black;
+        }
+        .ex5{
+            background-color: var(--verde);
+            color: black;
+        }
+        .ex8{
+            background-color: var(--amarillo);
+            color: black;
+        }
+        .ex1, .ex4, .ex5, .ex8{
+            grid-column: span 2;
+            padding: 2em 4em;
+            display: flex;
+            flex-direction: column;
+        }
+        .ex2, .ex3, .ex6, .ex7{
+            grid-column: span 3;
+            
+        }
+        h1{
+            font-size: 1.9em;
+            line-height: 0.8em;
+            flex-grow: 1;
+        }
+        h2{
+            font-size: 1em;
+            font-weight: 300;
+        }
+        /* Añadir @media */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="expo ex1">
+            <h1>ESENCIA Y EXPRESIÓN</h1>
+            <h2>CENTRO BOTÍN SANTANDER</h2>
+        </div>
+        <div class="expo ex2">
+            <img src="img/8%20(1).jpg">
+        </div>
+        
+        <div class="expo ex3">
+            <img src="img/8%20(2).jpg">
+        </div>
+        
+        <div class="expo ex4">
+            <img src="img/8%20(4).jpg">
+        </div>
+        
+        <div class="expo ex5">
+            <h1>linda loca vieja bruja</h1>
+            <h2>CENTRO DE ARTE REINA SOFÍA. Madrid</h2>
+        </div>
+        
+        <div class="expo ex6">
+            <img src="img/8%20(3).jpg">
+        </div>
+        
+        <div class="expo ex7">
+            <h1>UN MUNDO A LA FUGA</h1>
+            <h2>MUSEO GUGGENHEIM BILBAO</h2>
+            </div>
+        <div class="expo ex8">
+            <h1>LUJO</h1>
+            <h2>CAIXAFORUM MADRID</h2>
+        </div>
+        
+    </div>
+</body>
+</html>
